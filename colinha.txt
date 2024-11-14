@@ -1,0 +1,37 @@
+#inicia o projeto
+npm init
+#vai dando enter
+
+#instala typescript e salva no package.json
+npm install typescript ts-node-dev --save-dev
+
+#inicia o projeto com typescript
+npx tsc --init
+
+#adicionar no package.json, na seção scripts o seguinte comando
+"start": "npx ts-node-dev main.ts"
+#talvez adicionar --respawn --transpile-only
+
+#criar um arquivo main.ts
+
+
+#instalar expressjs
+npm install express --save
+
+#o ts vai acusar um erro por causa da falta dos tipos do express entao roode esse comando
+npm i --save-dev @types/express
+
+#instalavar biblioteca de acesso ao banco
+npm install pg-promise --save
+
+#banco de dados
+create table funcionarios (
+	id serial primary key,
+	nome varchar(60),
+	status int
+)
+
+#o campo auto incremento é definido no postgresql com o tipo SERIAL
+
+
+#lembrem de executar o npm install  depois de clonar o projeto
